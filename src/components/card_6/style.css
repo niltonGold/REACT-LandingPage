@@ -1,0 +1,162 @@
+
+
+/* ************************************************************************ */
+/* CONFIGURACION PARA VER LA LANDINGPAGE EN PANTALLAS MENORES A 768 PIXELES */
+/* ************************************************************************ */
+@media (max-width: 768px) {
+
+
+    /* CONTENEDOR PRINCIPAL */
+        .card_6-container {
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../../imagenes/card_6_imagenes/card_6_fondo.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    
+    
+                    /* SUB Contenedor 1 */
+                    .card_6-banner-tilte {
+                        color: #ffffff;
+                        font-weight: bold;
+                        text-align: center;
+                        background-color:rgb(84, 130, 53, 0.8);
+                        padding: 0.5rem;
+                        font-size: 0.9rem;
+                    }
+                    
+
+                    /* SUB Contenedor 2 */
+                    .card_6-sub-container-texto-parrafo1 {
+                        font-size: 0.7rem;
+                        text-align: left;
+                        background-color: rgba(5, 93, 217, 0.7);
+                        width: 80%;
+                        padding: 0.5rem;
+                        color: #ffffff;
+                        font-weight: bold;
+                        margin-top: 15rem;
+                    }
+
+
+                                b{
+                                    font-size: 0.7rem;
+                                    text-decoration: underline;
+                                }
+                    
+                                
+                    /* SUB Contenedor 3 */
+                    .card_6-sub-container-texto-parrafo2 {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+
+
+                                .card_6-sub-container-texto-parrafo2-texto{
+                                    font-size: 0.7rem;
+                                    background-color: rgba(5, 93, 217, 0.7);
+                                    width: 80%;
+                                    padding: 0.5rem;
+                                    color: #ffffff;
+                                    font-weight: bold;
+                                    text-align: right;
+                                }
+
+
+                    /* SUB Contenedor 4 */
+                    .card_6-sub-container-texto-parrafo3 {
+                        font-weight: bold;
+                        text-align: center;
+                        color: #ffffff;
+                        background-color:rgb(84, 130, 53, 0.8);
+                        padding: 0.5rem;
+                        font-size: 0.6rem;
+                    }
+                                                            
+
+}
+
+
+
+
+
+/* ************************************************************************ */
+/* CONFIGURACION PARA VER LA LANDINGPAGE EN PANTALLAS MAYORES A 768 PIXELES */
+/* ************************************************************************ */
+@media (min-width: 769px) {
+   
+    
+    /* CONTENEDOR PRINCIPAL */
+    .card_6-container {
+        width: 80%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../../imagenes/card_6_imagenes/card_6_fondo.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+                /* SUB Contenedor 1 */
+                .card_6-banner-tilte {
+                    color: #ffffff;
+                    font-weight: bold;
+                    text-align: center;
+                    background-color:rgb(84, 130, 53, 0.8);
+                    padding: 0.5rem;
+                    font-size: 3vw;
+                }
+
+
+                /* SUB Contenedor 2 */
+                .card_6-sub-container-texto-parrafo1 {
+                    text-align: left;
+                    background-color: rgba(5, 93, 217, 0.7);
+                    width: 50%;
+                    padding: 0.5rem;
+                    color: #ffffff;
+                    font-weight: bold;
+                    margin-top: 20rem;
+                }
+
+                            b {
+                                font-size: 1rem;
+                                text-decoration: underline;
+                            }
+
+
+                /* SUB Contenedor 3 */
+                .card_6-sub-container-texto-parrafo2 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                                    
+                            .card_6-sub-container-texto-parrafo2-texto {
+                                background-color: rgba(5, 93, 217, 0.7);
+                                width: 50%;
+                                padding: 0.5rem;
+                                color: #ffffff;
+                                font-weight: bold;
+                                text-align: right;
+                            }
+
+
+                /* SUB Contenedor 4 */
+                .card_6-sub-container-texto-parrafo3 {
+                    font-weight: bold;
+                    text-align: center;
+                    color: #ffffff;
+                    background-color: rgb(84, 130, 53, 0.8);
+                    padding: 0.5rem;
+                }
+
+                                                
+}
