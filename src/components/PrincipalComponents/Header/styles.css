@@ -1,0 +1,50 @@
+.Header-container{
+    background-color: rgb(112, 155, 155);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Móviles Pequeños */
+@media only screen and (min-width: 350px) and (max-width: 480px) {
+
+
+}
+
+
+/* Móviles Medianos a Grandes */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+
+}
+
+
+/* Tabletas Pequeñas */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+
+/* Tabletas Grandes */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+
+}
+
+
+/* Laptops y Desktops Pequeños */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+
+
+}
+
+
+/* Desktops Grandes */
+@media only screen and (min-width: 1441px) {
+
+    
+}

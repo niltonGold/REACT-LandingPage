@@ -1,0 +1,400 @@
+.Card-Principal-Container{
+    color: rgb(255, 255, 255);    
+    text-align: center;
+    font-weight: bold;
+}
+
+        .card-titulo{
+            background-color: rgb(14, 97, 2);
+        }
+
+        .card-sub-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+        }
+
+                .card-subtitulo{
+                    background-color: rgb(84, 130, 53, 0.8);
+                    color: rgb(255, 255, 255);
+                }
+
+
+                .card-sub-sub-container-concepto-pie-de-card{
+
+                }
+
+                        .card-concepto-whasap-container{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+
+                                .card-concepto{
+                                    text-align: left;
+                                    background-color: rgba(5, 93, 217, 0.7);
+                                }
+
+                                .card-whasap-container {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    background-color: rgba(14, 97, 2, 0.7);
+                                    transition: background-color 0.3s, transform 0.2s;
+                                }
+                                
+                                .card-whasap-container:hover {
+                                    background-color: #e64a19;
+                                    box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.6);
+                                    transform: scale(1.05);
+                                    cursor: pointer;
+                                }
+
+                                .card-whasap-mensaje{
+                                }
+
+                                .card-pie-de-card{
+                                    background-color: rgb(84, 130, 53, 0.8);
+                                }
+
+
+/* Móviles Pequeños */
+@media only screen and (min-width: 350px) and (max-width: 480px) {
+
+        .Card-Principal-Container{
+            width: 19rem;
+        }
+
+                .card-titulo{
+                    border-radius: 10px 10px 0 0;
+                    padding: 0.5rem;
+                    font-size: 15px;
+                }
+
+                .card-sub-container{
+                    border-radius: 0 0 10px 10px;
+                    height: 22rem;
+                }
+
+                        .card-subtitulo{
+                            padding: 0.5rem;
+                            font-size: 14px;
+                        }
+
+
+                        .card-sub-sub-container-concepto-pie-de-card{
+                        }
+
+                                .card-concepto-whasap-container{
+                                    margin-bottom: 0.5rem;
+                                    font-size: 10px;
+                                }
+
+                                        .card-concepto{
+                                            width: 8rem;
+                                            padding: 0.5rem;
+                                            border-radius: 0 10px 10px 0;
+                                        }
+
+                                        .card-whasap-container{
+                                            width: 4rem;
+                                            padding: 0.5rem;
+                                            border-radius: 10px 0 0 10px;
+                                        }
+                                        
+
+                                        .card-whasap-mensaje{
+                                        }
+
+                                        .card-pie-de-card{
+                                            padding: 0.5rem;
+                                            border-radius: 0 0 10px 10px;
+                                            font-size: 9px;
+                                        }
+
+}
+
+
+/* Móviles Medianos a Grandes */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+        .Card-Principal-Container{
+            width: 25rem;
+        }
+
+                .card-titulo{
+                    border-radius: 10px 10px 0 0;
+                    padding: 0.6rem;
+                    font-size: 18px;
+                }
+
+                .card-sub-container{
+                    border-radius: 0 0 10px 10px;
+                    height: 25rem;
+                }
+
+                        .card-subtitulo{
+                            padding: 0.6rem;
+                            font-size: 17px;
+                        }
+
+
+                        .card-sub-sub-container-concepto-pie-de-card{
+                        }
+
+                                .card-concepto-whasap-container{
+                                    margin-bottom: 0.6rem;
+                                    font-size: 12px;
+                                }
+
+                                        .card-concepto{
+                                            width: 9.5rem;
+                                            padding: 0.6rem;
+                                            border-radius: 0 10px 10px 0;
+                                        }
+
+                                        .card-whasap-container{
+                                            width: 4rem;
+                                            padding: 0.5rem;
+                                            border-radius: 10px 0 0 10px;
+                                        }
+
+                                        .card-whasap-mensaje{
+                                        }
+
+                                        .card-pie-de-card{
+                                            padding: 0.6rem;
+                                            border-radius: 0 0 10px 10px;
+                                            font-size: 11px;
+                                        }
+
+}
+
+
+/* Tabletas Pequeñas */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+        .Card-Principal-Container{
+            width: 40rem;
+        }
+
+                .card-titulo{
+                    border-radius: 15px 15px 0 0;
+                    padding: 1rem;
+                    font-size: 21px;
+                }
+
+                .card-sub-container{
+                    border-radius: 0 0 15px 15px;
+                    height: 29rem;
+                }
+
+                        .card-subtitulo{
+                            padding: 1rem;
+                            font-size: 20px;
+                        }
+
+
+                        .card-sub-sub-container-concepto-pie-de-card{
+                        }
+
+                                .card-concepto-whasap-container{
+                                    margin-bottom: 1rem;
+                                    font-size: 15px;
+                                }
+
+                                        .card-concepto{
+                                            width: 12rem;
+                                            padding: 0.7rem;
+                                            border-radius: 0 15px 15px 0;
+                                        }
+
+                                        .card-whasap-container{
+                                            width: 7rem;
+                                            padding: 0.5rem;
+                                            border-radius: 15px 0 0 15px;
+                                        }
+
+                                        .card-whasap-mensaje{
+                                        }
+
+                                        .card-pie-de-card{
+                                            padding: 1rem;
+                                            border-radius: 0 0 15px 15px;
+                                            font-size: 12px;
+                                        }
+
+}
+
+
+/* Tabletas Grandes */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+        .Card-Principal-Container{
+            width: 55rem;
+        }
+
+                .card-titulo{
+                    border-radius: 18px 18px 0 0;
+                    padding: 1rem;
+                    font-size: 24px;
+                }
+
+                .card-sub-container{
+                    border-radius: 0 0 18px 18px;
+                    height: 32rem;
+                }
+
+                        .card-subtitulo{
+                            padding: 1rem;
+                            font-size: 23px;
+                        }
+
+
+                        .card-sub-sub-container-concepto-pie-de-card{
+                        }
+
+                                .card-concepto-whasap-container{
+                                    margin-bottom: 1.5rem;
+                                    font-size: 15px;
+                                }
+
+                                        .card-concepto{
+                                            width: 15rem;
+                                            padding: 0.8rem;
+                                            border-radius: 0 18px 18px 0;
+                                        }
+
+                                        .card-whasap-container{
+                                            width: 8rem;
+                                            padding: 0.8rem;
+                                            border-radius: 18px 0 0 18px;
+                                        }
+
+                                        .card-whasap-mensaje {  
+                                        }
+
+                                        .card-pie-de-card{
+                                            padding: 1rem;
+                                            border-radius: 0 0 18px 18px;
+                                            font-size: 14px;
+                                        }
+
+}
+
+
+/* Laptops y Desktops Pequeños */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+
+        .Card-Principal-Container{
+            width: 65rem;
+        }
+
+                .card-titulo{
+                    border-radius: 20px 20px 0 0;
+                    padding: 1.2rem;
+                    font-size: 27px;
+                }
+
+                .card-sub-container{
+                    border-radius: 0 0 20px 20px;
+                    height: 40rem;
+                }
+
+                        .card-subtitulo{
+                            padding: 1.2rem;
+                            font-size: 26px;
+                        }
+
+
+                        .card-sub-sub-container-concepto-pie-de-card{
+                        }
+
+                                .card-concepto-whasap-container{
+                                    margin-bottom: 2rem;
+                                    font-size: 20px;
+
+                                }
+
+                                        .card-concepto{
+                                            width: 21rem;
+                                            padding: 0.8rem;
+                                            border-radius: 0 20px 20px 0;
+                                        }
+
+                                        .card-whasap-container{
+                                            width: 9rem;
+                                            padding: 0.9rem;
+                                            border-radius: 20px 0 0 20px;
+                                        }
+
+                                        .card-whasap-mensaje {  
+                                        }
+
+                                        .card-pie-de-card{
+                                            padding: 1.2rem;
+                                            border-radius: 0 0 20px 20px;
+                                            font-size: 16px;
+                                        }
+
+}
+
+
+/* Desktops Grandes */
+@media only screen and (min-width: 1441px) {
+
+        .Card-Principal-Container{
+            width: 75rem;
+        }
+
+                .card-titulo{
+                    border-radius: 25px 25px 0 0;
+                    padding: 1.5rem;
+                    font-size: 30px;
+                }
+
+                .card-sub-container{
+                    border-radius: 0 0 25px 25px;
+                    height: 42rem;
+                }
+
+                        .card-subtitulo{
+                            padding: 1.5rem;
+                            font-size: 29px;
+                        }
+
+
+                        .card-sub-sub-container-concepto-pie-de-card{
+                        }
+
+                                .card-concepto-whasap-container{
+                                    margin-bottom: 2.5rem;
+                                    font-size: 22px;
+                                }
+
+                                        .card-concepto{
+                                            width: 22rem;
+                                            padding: 1rem;
+                                            border-radius: 0 25px 25px 0;
+                                        }
+
+                                        .card-whasap-container{
+                                            width: 9rem;
+                                            padding: 1rem;
+                                            border-radius: 25px 0 0 25px;
+                                        }
+
+                                        .card-whasap-mensaje {  
+                                        }
+
+                                        .card-pie-de-card{
+                                            padding: 1.2rem;
+                                            border-radius: 0 0 25px 25px;
+                                            font-size: 17px;
+                                        }
+
+}
