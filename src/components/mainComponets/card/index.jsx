@@ -6,10 +6,17 @@ export const Card = ( props ) => {
 
 const sendMessage = () => {
   const phoneNumber = '34650347741';
-  const message = props.mensajeWhasap;
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+  
+  // Tomamos el mensaje original sin la primera y última letra
+  const mensajeOriginal = props.mensajeWhasap;
+  const mensajeModificado = mensajeOriginal.length > 2
+    ? mensajeOriginal.slice(1, -1)  // Eliminamos el primer y último carácter
+    : mensajeOriginal;  // Si el mensaje es muy corto, lo dejamos tal cual
+  
+  // Creamos la URL de WhatsApp con el mensaje modificado
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(mensajeModificado)}`;
   window.open(whatsappUrl, '_blank');
-};   
+};
 
   return (
     <>
