@@ -7,24 +7,20 @@ export const Card = ( props ) => {
 
 const sendMessage = () => {
   
-  
+
   const phoneNumber = '34650347741';
   const mensajeOriginal = props.mensajeWhasap;
   const mensajeModificado = mensajeOriginal.length > 2
     ? mensajeOriginal.slice(1, -1) 
     : mensajeOriginal; 
- const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensajeModificado)}`;
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensajeModificado)}`;
+  window.open(whatsappUrl, '_blank');
 
-  // if (window.matchMedia("(pointer: coarse)").matches) {
-    
-  //   window.open(whatsappUrl, '_blank');
-  // } else {
-   
-  //   alert("Abriendo WhatsApp Web...");
-    window.open(whatsappUrl, '_blank');
-  // }
+  
 };
 
+  
+  
   
   return (
     <>

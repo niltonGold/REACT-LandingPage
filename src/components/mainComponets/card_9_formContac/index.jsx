@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './style.css';
-import ReplyAllIcon from '@mui/icons-material/ReplyAll';
-import { useMediaQuery } from '@mui/material';
 
 const initialFormData = {
         nombre: '',
@@ -10,18 +8,12 @@ const initialFormData = {
         email: '',
         mensaje: '',
         area: '',
-      //   localidad: ''
-    };
+};
 
 
 const Card_9_formContac = () => {
-
-
-      // const isLargeScreen = useMediaQuery( '(min-width:769px)' );
       
       const [formData, setFormData] = useState( initialFormData );
-
-      // const [formVisible, setFormVisible] = useState(false);
 
       const handleChange = (e) => {
             const { name, value } = e.target;
@@ -30,21 +22,23 @@ const Card_9_formContac = () => {
                   [name]: value
             });
       };
-
-      // const handleBannerClick = () => {
-      //   setFormVisible(!formVisible);
-      // };
       
       const handleSubmit = (e) => {
             e.preventDefault();
             sendEmail( formData );
             console.log( formData );
             setFormData( initialFormData );
-            // setFormVisible(false); 
       };
 
-      const sendEmail = (data) => {
-            emailjs.send('service_aiddyaw', 'template_xyhrz9u', data, 'r_-18lB31SJkvZzPx')
+      const sendEmail = ( data ) => {
+            
+            const ServiceAiddyaw = 'service_aiddyaw';
+
+            const TemplateId = 'template_xyhrz9u';
+
+            const PublicKey = 'r_-18lB31SJkvZzPx'
+
+            emailjs.send( ServiceAiddyaw, TemplateId, data, PublicKey )
                   .then((response) => {
                   console.log('Correo enviado exitosamente!', response.status, response.text);
                   alert('Mensaje enviado exitosamente!');

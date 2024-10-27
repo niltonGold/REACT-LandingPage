@@ -4,7 +4,6 @@
     bottom: 0;
     width: 100%;
     background-color:rgba(241, 226, 40, 0.2);
-    /* padding: 15px; */
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
@@ -17,5 +16,4 @@
 
 .hidden {
     transform: translateY(100%);
-    /* Mueve el footer flotante fuera de la vista */
 }
