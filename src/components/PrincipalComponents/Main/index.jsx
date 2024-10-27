@@ -25,7 +25,7 @@ export const Main = () => {
 
     // CARD 2 DATOS "PORQUE"
     const Card2BackGroundImg = cardImgen2;
-    const Card2Titulo = '¿POR QUÉ ELGIR PANELES SOLARES FLOTANTES?';
+    const Card2Titulo = '¿POR QUÉ ELEGIR PANELES SOLARES FLOTANTES?';
     const Card2SubTitulo = '¿ALTOS COSTES DE ENERGÍA, FALTA DE ESPACIO, ALGAS O ALTA EVAPORACIÓN?';
     const Card2Concepto = 'Los paneles solares flotantes aumentan la eficiencia, aprovechan áreas sin uso y reducen costos y problemas de evaporación y algas.';
     const Card2MensajeWhasap = '"¿Por qué paneles solares?"';
@@ -37,7 +37,7 @@ export const Main = () => {
     const Card3Titulo = '¿QUIÉNES SOMOS?';
     const Card3SubTitulo = 'EXPERTOS EN ENERGÍA SOLAR FLOTANTE Y SOSTENIBILIDAD';
     const Card3Concepto = 'Ofrecemos energía solar flotante sostenible y eficiente. Con el sistema SFS, reducimos costos y optimizamos recursos hídricos.';
-    const Card3MensajeWhasap = '"Más sobre ustedes" ';
+    const Card3MensajeWhasap = '"Más sobre ustedes"';
     const Card3PieDeCard = 'Comprometidos con un futuro más limpio y eficiente.';
 
 
@@ -46,7 +46,7 @@ export const Main = () => {
     const Card4Titulo = 'SMART FLOATING STRUCTURE (SFS): INNOVACIÓN EN ACCIÓN';
     const Card4SubTitulo = 'LA SOLUCIÓN INTELIGENTE PARA ENERGÍA SOLAR Y CUIDADO DEL AGUA';
     const Card4Concepto = 'El sistema SFS flota paneles solares de forma económica, reduciendo evaporación y algas. Registrado como modelo de utilidad (ES 1305059 U).';
-    const Card4MensajeWhasap = '"Más sobre SFS" ';
+    const Card4MensajeWhasap = '"Más sobre SFS"';
     const Card4PieDeCard = 'SFS: energía, sostenibilidad y cuidado del agua en un solo sistema.';
 
 
@@ -57,6 +57,10 @@ export const Main = () => {
     const Card5Concepto = 'Con 20 años de experiencia, más de 2000 proyectos y certificaciones ISO en energía y tratamiento de agua.';
     const Card5MensajeWhasap = '"Experiencia comprobada"';
     const Card5PieDeCard = 'Dos décadas de innovación en energía y agua, a tu servicio.';
+
+
+
+    
     return (
 
         <>

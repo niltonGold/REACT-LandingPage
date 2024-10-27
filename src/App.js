@@ -9,28 +9,24 @@ import { useState, useEffect } from 'react';
 function App() {
 
 
-
   const [isFloatingFooterVisible, setFloatingFooterVisible] = useState(true);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const footerOffsetTop = document.querySelector('.Footer-container').offsetTop;
-      const scrollPosition = window.scrollY + window.innerHeight;
+      const handleScroll = () => {
+              const footerOffsetTop = document.querySelector('.Footer-container').offsetTop;
+              const scrollPosition = window.scrollY + window.innerHeight;
 
-      if (scrollPosition >= footerOffsetTop) {
-        setFloatingFooterVisible(false);
-      } else {
-        setFloatingFooterVisible(true);
-      }
-    };
+              if (scrollPosition >= footerOffsetTop) {
+                setFloatingFooterVisible(false);
+              } else {
+                setFloatingFooterVisible(true);
+              }
+      };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-
-
-
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+            
+    }, []);
 
 
 
@@ -43,10 +39,8 @@ function App() {
           <Header/>
           <Main/>
           <Footer/>
-              {/* <div className={`FloatingFooter ${isFloatingFooterVisible ? '' : 'hidden'}`}>
-                Floating Footer Content
-              </div> */}
-      <FooterFlotante isVisible={isFloatingFooterVisible} />
+          <FooterFlotante isVisible={isFloatingFooterVisible} />
+          
     </div>
 
   );

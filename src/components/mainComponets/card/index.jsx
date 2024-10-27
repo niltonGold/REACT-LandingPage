@@ -1,23 +1,31 @@
 import './styles.css';
-import React from 'react';
+import React, { useState } from 'react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export const Card = ( props ) => {
 
+const [isTouched, setIsTouched] = useState(false);
+
 const sendMessage = () => {
   const phoneNumber = '34650347741';
-  
-  // Tomamos el mensaje original sin la primera y última letra
   const mensajeOriginal = props.mensajeWhasap;
   const mensajeModificado = mensajeOriginal.length > 2
-    ? mensajeOriginal.slice(1, -1)  // Eliminamos el primer y último carácter
-    : mensajeOriginal;  // Si el mensaje es muy corto, lo dejamos tal cual
-  
-  // Creamos la URL de WhatsApp con el mensaje modificado
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(mensajeModificado)}`;
-  window.open(whatsappUrl, '_blank');
+    ? mensajeOriginal.slice(1, -1) 
+    : mensajeOriginal; 
+ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensajeModificado)}`;
+
+  // if (window.matchMedia("(pointer: coarse)").matches) {
+    
+  //   window.open(whatsappUrl, '_blank');
+  // } else {
+   
+  //   alert("Abriendo WhatsApp Web...");
+    window.open(whatsappUrl, '_blank');
+  // }
 };
 
+    const handleTouchStart = () => setIsTouched(true);
+  const handleTouchEnd = () => setIsTouched(false);
   return (
     <>
       <div className='Card-Principal-Container'>
@@ -36,7 +44,12 @@ const sendMessage = () => {
                             
                                 <div className='card-concepto'>{ props.concepto }</div>
                                 
-                                <div className='card-whasap-container' onClick={sendMessage}>
+                                <div
+              className={`card-whasap-container ${isTouched ? 'elevated' : ''}`}
+              onClick={sendMessage}
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+            >
                                         
                                         <WhatsAppIcon sx={{ color: '#ffffff', 
                                                           '@media (min-width: 350px) and (max-width: 480px)': {
