@@ -6,7 +6,7 @@ import cardImgen2 from '../../../imagenes/card_1_Inicio_imagenes/card_1_fondo.pn
 import cardImgen3 from '../../../imagenes/card_1_Inicio_imagenes/card_1_fondo.png';
 import cardImgen4 from '../../../imagenes/card_1_Inicio_imagenes/card_1_fondo.png';
 import cardImgen5 from '../../../imagenes/card_1_Inicio_imagenes/card_1_fondo.png';
-import Card_9_formContac from '../../mainComponets/card_9_formContac';
+import CardFormContac from '../../mainComponets/cardFormContac';
 
 
 
@@ -60,7 +60,7 @@ export const Main = () => {
 
 
 
-    
+
     return (
 
         <>
@@ -133,7 +133,7 @@ export const Main = () => {
 
                     {/* CARD 6 FOMULARIO */}
                     <div id='Diagnostico'>
-                        <Card_9_formContac />
+                        <CardFormContac />
                     </div>
                 
 

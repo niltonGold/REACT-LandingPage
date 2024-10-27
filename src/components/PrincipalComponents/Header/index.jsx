@@ -13,6 +13,14 @@ export const Header = () => {
     { label: 'DIAGNÓSTICO', href: '#Diagnostico' },
   ];
 
+      const scrollToSection = (event, href) => {
+    event.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+    
     return (
         <>
             <AppBar position="static" sx={{ backgroundColor: 'rgba(241, 226, 40, 0.2)', padding: '5px' }}>

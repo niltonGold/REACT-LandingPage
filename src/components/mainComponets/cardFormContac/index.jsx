@@ -11,7 +11,7 @@ const initialFormData = {
 };
 
 
-const Card_9_formContac = () => {
+const CardFormContac = () => {
       
       const [formData, setFormData] = useState( initialFormData );
 
@@ -36,7 +36,7 @@ const Card_9_formContac = () => {
 
             const TemplateId = 'template_xyhrz9u';
 
-            const PublicKey = 'r_-18lB31SJkvZzPx'
+            const PublicKey = 'r_-18lB31SJkvZzPx';
 
             emailjs.send( ServiceAiddyaw, TemplateId, data, PublicKey )
                   .then((response) => {
@@ -158,4 +158,4 @@ const Card_9_formContac = () => {
   );
 };
 
-export default Card_9_formContac;
+export default CardFormContac;
