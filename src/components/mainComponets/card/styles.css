@@ -47,13 +47,13 @@
                                     transition: background-color 0.3s, transform 0.2s;
                                 }
                                 
-                                                                .card-whasap-container:hover,
-                                                                .card-whasap-container.elevated {
-                                                                    background-color: #e64a19;
-                                                                    box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.6);
-                                                                    transform: scale(1.05);
-                                                                    cursor: pointer;
-                                                                }
+                                                        .card-whasap-container:hover,
+                                                        .card-whasap-container.elevated {
+                                                            background-color: #e64a19;
+                                                            box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.6);
+                                                            transform: scale(1.05);
+                                                            cursor: pointer;
+                                                        }
 
                                 .card-whasap-mensaje{
                                 }

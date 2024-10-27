@@ -17,6 +17,8 @@ export const Card = ( props ) => {
     if (window.matchMedia("(pointer: coarse)").matches) {
       // Acción para dispositivos táctiles
       window.open(whatsappUrl, '_blank');
+      // Restablece la elevación después de abrir el enlace
+      setTimeout(() => setIsTouched(false), 100);
     } else {
       // Acción para ordenadores
       alert("Abriendo WhatsApp Web...");
@@ -25,7 +27,7 @@ export const Card = ( props ) => {
   };
 
   const handleTouchStart = () => setIsTouched(true);
-  const handleTouchEnd = () => setIsTouched(false);
+  const handleTouchEnd = () => setTimeout(() => setIsTouched(false), 100);
   return (
     <>
       <div className='Card-Principal-Container'>
@@ -44,7 +46,7 @@ export const Card = ( props ) => {
                             
                                 <div className='card-concepto'>{ props.concepto }</div>
                                 
-                                <div
+                    <div
               className={`card-whasap-container ${isTouched ? 'elevated' : ''}`}
               onClick={sendMessage}
               onTouchStart={handleTouchStart}
