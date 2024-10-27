@@ -1,33 +1,31 @@
 import './styles.css';
-import React, { useState } from 'react';
+import React from 'react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export const Card = ( props ) => {
 
-  const [isTouched, setIsTouched] = useState(false);
 
-  const sendMessage = () => {
-    const phoneNumber = '34650347741';
-    const mensajeOriginal = props.mensajeWhasap;
-    const mensajeModificado = mensajeOriginal.length > 2
-      ? mensajeOriginal.slice(1, -1)
-      : mensajeOriginal;
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensajeModificado)}`;
+const sendMessage = () => {
+  
+  
+  const phoneNumber = '34650347741';
+  const mensajeOriginal = props.mensajeWhasap;
+  const mensajeModificado = mensajeOriginal.length > 2
+    ? mensajeOriginal.slice(1, -1) 
+    : mensajeOriginal; 
+ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensajeModificado)}`;
 
-    if (window.matchMedia("(pointer: coarse)").matches) {
-      // Acción para dispositivos táctiles
-      window.open(whatsappUrl, '_blank');
-      // Restablece la elevación después de abrir el enlace
-      setTimeout(() => setIsTouched(false), 100);
-    } else {
-      // Acción para ordenadores
-      alert("Abriendo WhatsApp Web...");
-      window.open(whatsappUrl, '_blank');
-    }
-  };
+  // if (window.matchMedia("(pointer: coarse)").matches) {
+    
+  //   window.open(whatsappUrl, '_blank');
+  // } else {
+   
+  //   alert("Abriendo WhatsApp Web...");
+    window.open(whatsappUrl, '_blank');
+  // }
+};
 
-  const handleTouchStart = () => setIsTouched(true);
-  const handleTouchEnd = () => setTimeout(() => setIsTouched(false), 100);
+  
   return (
     <>
       <div className='Card-Principal-Container'>
@@ -46,12 +44,7 @@ export const Card = ( props ) => {
                             
                                 <div className='card-concepto'>{ props.concepto }</div>
                                 
-                    <div
-              className={`card-whasap-container ${isTouched ? 'elevated' : ''}`}
-              onClick={sendMessage}
-              onTouchStart={handleTouchStart}
-              onTouchEnd={handleTouchEnd}
-            >
+                                <div className='card-whasap-container' onClick={sendMessage}>
                                         
                                         <WhatsAppIcon sx={{ color: '#ffffff', 
                                                           '@media (min-width: 350px) and (max-width: 480px)': {
