@@ -4,27 +4,27 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export const Card = ( props ) => {
 
-const [isTouched, setIsTouched] = useState(false);
+  const [isTouched, setIsTouched] = useState(false);
 
-const sendMessage = () => {
-  const phoneNumber = '34650347741';
-  const mensajeOriginal = props.mensajeWhasap;
-  const mensajeModificado = mensajeOriginal.length > 2
-    ? mensajeOriginal.slice(1, -1) 
-    : mensajeOriginal; 
- const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensajeModificado)}`;
+  const sendMessage = () => {
+    const phoneNumber = '34650347741';
+    const mensajeOriginal = props.mensajeWhasap;
+    const mensajeModificado = mensajeOriginal.length > 2
+      ? mensajeOriginal.slice(1, -1)
+      : mensajeOriginal;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensajeModificado)}`;
 
-  // if (window.matchMedia("(pointer: coarse)").matches) {
-    
-  //   window.open(whatsappUrl, '_blank');
-  // } else {
-   
-  //   alert("Abriendo WhatsApp Web...");
-    window.open(whatsappUrl, '_blank');
-  // }
-};
+    if (window.matchMedia("(pointer: coarse)").matches) {
+      // Acción para dispositivos táctiles
+      window.open(whatsappUrl, '_blank');
+    } else {
+      // Acción para ordenadores
+      alert("Abriendo WhatsApp Web...");
+      window.open(whatsappUrl, '_blank');
+    }
+  };
 
-    const handleTouchStart = () => setIsTouched(true);
+  const handleTouchStart = () => setIsTouched(true);
   const handleTouchEnd = () => setIsTouched(false);
   return (
     <>
