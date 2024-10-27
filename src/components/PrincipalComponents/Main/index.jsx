@@ -1,11 +1,11 @@
 import { Card } from '../../mainComponets/card';
 import './styles.css';
 import React from 'react';
-import cardImgen1 from '../../../imagenes/card_1_Inicio_imagenes/card_1_fondo.png';
-import cardImgen2 from '../../../imagenes/card_1_Inicio_imagenes/card_1_fondo.png';
-import cardImgen3 from '../../../imagenes/card_1_Inicio_imagenes/card_1_fondo.png';
-import cardImgen4 from '../../../imagenes/card_1_Inicio_imagenes/card_1_fondo.png';
-import cardImgen5 from '../../../imagenes/card_1_Inicio_imagenes/card_1_fondo.png';
+import cardPresentacionFondo from '../../../imagenes/cardPresentacionFondo.png';
+import cardPorqueFondo from '../../../imagenes/cardPorqueFondo.jpg';
+import cardQuienesSomosFondo from '../../../imagenes/cardQuienesSomosFondo.jpg';
+import cardSfsFondo from '../../../imagenes/cardSfsFondo.jpg';
+import cardExperienciaFondo from '../../../imagenes/cardExperienciaFondo.jpg';
 import CardFormContac from '../../mainComponets/cardFormContac';
 
 
@@ -15,7 +15,7 @@ export const Main = () => {
 
 
     // CARD 1 DATOS "PRESENTACION"
-    const Card1BackGroundImg = cardImgen1;
+    const CardPresentacion = cardPresentacionFondo;
     const Card1Titulo = 'DESCUBRE LA ENERGÍA SOLAR FLOTANTE';
     const Card1SubTitulo = 'FOTOVOLTAICA FLOTANTE: INNOVACIÓN Y SOSTENIBILIDAD PARA TUS EMBALSES';
     const Card1Concepto = '¿Tienes un embalse y quieres reducir hasta un 30% de tu factura eléctrica mientras limpias el agua?';
@@ -24,7 +24,7 @@ export const Main = () => {
 
 
     // CARD 2 DATOS "PORQUE"
-    const Card2BackGroundImg = cardImgen2;
+    const CardPorque = cardPorqueFondo;
     const Card2Titulo = '¿POR QUÉ ELEGIR PANELES SOLARES FLOTANTES?';
     const Card2SubTitulo = '¿ALTOS COSTES DE ENERGÍA, FALTA DE ESPACIO, ALGAS O ALTA EVAPORACIÓN?';
     const Card2Concepto = 'Los paneles solares flotantes aumentan la eficiencia, aprovechan áreas sin uso y reducen costos y problemas de evaporación y algas.';
@@ -33,7 +33,7 @@ export const Main = () => {
 
 
     // CARD 3 DATOS "QUIENES SOMOS"
-    const Card3BackGroundImg = cardImgen3;
+    const CardQuienesSomos = cardQuienesSomosFondo;
     const Card3Titulo = '¿QUIÉNES SOMOS?';
     const Card3SubTitulo = 'EXPERTOS EN ENERGÍA SOLAR FLOTANTE Y SOSTENIBILIDAD';
     const Card3Concepto = 'Ofrecemos energía solar flotante sostenible y eficiente. Con el sistema SFS, reducimos costos y optimizamos recursos hídricos.';
@@ -42,7 +42,7 @@ export const Main = () => {
 
 
     // CARD 4 DATOS "¿QUE ES SFS?"
-    const Card4BackGroundImg = cardImgen4;
+    const CardQueEsSFS = cardSfsFondo;
     const Card4Titulo = 'SMART FLOATING STRUCTURE (SFS): INNOVACIÓN EN ACCIÓN';
     const Card4SubTitulo = 'LA SOLUCIÓN INTELIGENTE PARA ENERGÍA SOLAR Y CUIDADO DEL AGUA';
     const Card4Concepto = 'El sistema SFS flota paneles solares de forma económica, reduciendo evaporación y algas. Registrado como modelo de utilidad (ES 1305059 U).';
@@ -51,7 +51,7 @@ export const Main = () => {
 
 
     // CARD 5 DATOS "EXPERIENCIA"
-    const Card5BackGroundImg = cardImgen5;
+    const CardExperiencia = cardExperienciaFondo;
     const Card5Titulo = 'EXPERIENCIA Y CONFIANZA';
     const Card5SubTitulo = '2000 PROYECTOS Y CERTIFICACIONES ISO GARANTIZAN RESULTADOS';
     const Card5Concepto = 'Con 20 años de experiencia, más de 2000 proyectos y certificaciones ISO en energía y tratamiento de agua.';
@@ -67,10 +67,10 @@ export const Main = () => {
             <div className='Main-container'>
                 
 
-                    {/* CARD 1 DATOS */}
+                    {/* CARD 1 "PRESENTACION" */}
                     <div id='Inicio'>
                         <Card
-                            imgBarckGround={Card1BackGroundImg}
+                            imgBarckGround={CardPresentacion}
                             cardTitulo={Card1Titulo}
                             subtitulo={Card1SubTitulo}
                             concepto={Card1Concepto}
@@ -80,10 +80,10 @@ export const Main = () => {
                     </div>
 
                 
-                    {/* CARD 2 DATOS */}
+                    {/* CARD 2 "PORQUE" */}
                     <div id='Por_que'>
                         <Card
-                            imgBarckGround={Card2BackGroundImg}
+                            imgBarckGround={CardPorque}
                             cardTitulo={Card2Titulo}
                             subtitulo={Card2SubTitulo}
                             concepto={Card2Concepto}
@@ -93,10 +93,10 @@ export const Main = () => {
                     </div>
                 
 
-                    {/* CARD 3 DATOS */}
+                    {/* CARD 3 "QUIENES SOMOS" */}
                     <div id='QuienesSomos'>
                         <Card
-                            imgBarckGround={Card3BackGroundImg}
+                            imgBarckGround={CardQuienesSomos}
                             cardTitulo={Card3Titulo}
                             subtitulo={Card3SubTitulo}
                             concepto={Card3Concepto}
@@ -106,10 +106,10 @@ export const Main = () => {
                     </div>
 
                 
-                    {/* CARD 4 DATOS */}
+                    {/* CARD 4 "¿QUE ES SFS?" */}
                     <div id='SFS'>
                     <Card
-                        imgBarckGround={Card4BackGroundImg}
+                        imgBarckGround={CardQueEsSFS}
                         cardTitulo={Card4Titulo}
                         subtitulo={Card4SubTitulo}
                         concepto={Card4Concepto}
@@ -118,10 +118,10 @@ export const Main = () => {
                     />
                     </div>
                 
-                    {/* CARD 5 DATOS */}
+                    {/* CARD 5 "EXPERIENCIA" */}
                     <div id='Experiencia'>
                         <Card
-                            imgBarckGround={Card5BackGroundImg}
+                            imgBarckGround={CardExperiencia}
                             cardTitulo={Card5Titulo}
                             subtitulo={Card5SubTitulo}
                             concepto={Card5Concepto}
@@ -133,7 +133,7 @@ export const Main = () => {
 
                     {/* CARD 6 FOMULARIO */}
                     <div id='Diagnostico'>
-                        <CardFormContac />
+                        <CardFormContac/>
                     </div>
                 
 
