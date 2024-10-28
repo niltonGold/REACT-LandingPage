@@ -1,0 +1,313 @@
+.cookie-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.Cookie-banner-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+            .cookie-banner-parrafo {
+                /* background-color: rgb(46, 154, 248); */
+                width: 100%;
+                text-align: justify;
+            }
+
+            .cookie-banner-botones-container{
+                display: flex;
+                flex-direction: row;
+            }
+
+                    button{
+                        all: unset;
+                        font-weight: bold;
+                        text-decoration: underline;
+                        color: rgb(255, 255, 255);
+                        cursor: pointer;
+                    }
+
+                    .btn-aceptar{
+                        background-color: rgb(238, 255, 0);
+                        color: black;
+                    }
+
+                                .btn-aceptar:hover {
+                                    background-color:rgb(238, 255, 0, 0.5);
+                                }
+
+                    .btn-rechazar{
+                        background-color: rgb(255, 0, 0);       
+                    }
+
+                                .btn-rechazar:hover {
+                                    background-color: rgb(255, 0, 0, 0.5);
+                                }
+
+
+
+
+
+/* Móviles Pequeños */
+@media only screen and (min-width: 350px) and (max-width: 480px) {
+
+.cookie-overlay {
+}
+
+.Cookie-banner-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+            .cookie-banner-parrafo {
+            }
+
+            .cookie-banner-botones-container{
+                gap: 2rem;
+                padding: 40px;
+            }
+
+                    button{
+                        padding: 10px;
+                        border-radius: 10px;
+                    }
+
+                    .btn-aceptar{
+                    }
+
+                                .btn-aceptar:hover {
+                                }
+
+                    .btn-rechazar{ 
+                    }
+
+                                .btn-rechazar:hover {
+                                }
+
+}
+
+
+/* Móviles Medianos a Grandes */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+.cookie-overlay {
+}
+
+.Cookie-banner-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    font-size: 22px;
+}
+
+            .cookie-banner-parrafo {
+            }
+
+            .cookie-banner-botones-container{
+                gap: 4rem;
+                padding: 50px;
+            }
+
+                    button{
+                        padding: 15px;
+                        border-radius: 15px;
+                    }
+
+                    .btn-aceptar{
+                    }
+
+                                .btn-aceptar:hover {
+                                }
+
+                    .btn-rechazar{ 
+                    }
+
+                                .btn-rechazar:hover {
+                                }
+
+}
+
+
+/* Tabletas Pequeñas */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+.cookie-overlay {
+}
+
+.Cookie-banner-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    font-size: 25px;
+}
+
+            .cookie-banner-parrafo {
+            }
+
+            .cookie-banner-botones-container{
+                gap: 5rem;
+                padding: 70px;
+            }
+
+                    button{
+                        padding: 15px;
+                        border-radius: 15px;
+                    }
+
+                    .btn-aceptar{
+                    }
+
+                                .btn-aceptar:hover {
+                                }
+
+                    .btn-rechazar{ 
+                    }
+
+                                .btn-rechazar:hover {
+                                }
+
+}
+
+
+/* Tabletas Grandes */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+.cookie-overlay {
+}
+
+.Cookie-banner-container {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+    font-size: 30px;
+}
+
+            .cookie-banner-parrafo {
+            }
+
+            .cookie-banner-botones-container{
+                gap: 5rem;
+                padding: 80px;
+            }
+
+                    button{
+                        padding: 20px;
+                        border-radius: 20px;
+                    }
+
+                    .btn-aceptar{
+                    }
+
+                                .btn-aceptar:hover {
+                                }
+
+                    .btn-rechazar{ 
+                    }
+
+                                .btn-rechazar:hover {
+                                }    
+
+}
+
+
+/* Laptops y Desktops Pequeños */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+
+.cookie-overlay {
+}
+
+.Cookie-banner-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    font-size: 35px;
+}
+
+            .cookie-banner-parrafo {
+            }
+
+            .cookie-banner-botones-container{
+                gap: 6rem;
+                padding: 100px;
+            }
+
+                    button{
+                        padding: 25px;
+                        border-radius: 25px;
+                    }
+
+                    .btn-aceptar{
+                    }
+
+                                .btn-aceptar:hover {
+                                }
+
+                    .btn-rechazar{ 
+                    }
+
+                                .btn-rechazar:hover {
+                                }  
+
+}
+
+
+/* Desktops Grandes */
+@media only screen and (min-width: 1441px) {
+
+.cookie-overlay {
+}
+
+.Cookie-banner-container {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 120px;
+    font-size: 37px;
+}
+
+            .cookie-banner-parrafo {
+            }
+
+            .cookie-banner-botones-container{
+                gap: 9rem;
+                padding: 120px;
+            }
+
+                    button{
+                        padding: 30px;
+                        border-radius: 30px;
+                    }
+
+                    .btn-aceptar{
+                    }
+
+                                .btn-aceptar:hover {
+                                }
+
+                    .btn-rechazar{ 
+                    }
+
+                                .btn-rechazar:hover {
+                                }  
+
+
+    
+}                               

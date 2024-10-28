@@ -1,4 +1,5 @@
 import './App.css';
+import { CookieBanner } from './components/cookieBanner';
 import { FooterFlotante } from './components/footerFlotante';
 import { Footer } from './components/PrincipalComponents/Footer';
 import { Header } from './components/PrincipalComponents/Header';
@@ -26,9 +27,7 @@ function App() {
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
             
-    }, []);
-
-
+  }, []);
 
 
 
@@ -40,6 +39,7 @@ function App() {
           <Main/>
           <Footer/>
           <FooterFlotante isVisible={isFloatingFooterVisible} />
+          <CookieBanner/>
           
     </div>
 
